@@ -32,10 +32,10 @@ production:
   # pool: 5
   # timeout: 5000
 
-  adapter_mysql: "mysql2"
-  encoding_mysql: "utf8"
-  database_mysql: "production_mysql"
-  pool_mysql: "5"
-  username_mysql: "root"
-  password_mysql: "gan1dolf2"
+  adapter: "mysql2"
+  encoding: "utf8"
+  database: "deploysuitetest"
+  pool: "5"
+  username: "root"
+  password: "gan1dolf2"
   socket_mysql: "/var/run/mysqld/mysqld.sock"
