@@ -12,9 +12,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
-
-
-ActiveRecord::Schema.define(version: 20150328224335) do
+ActiveRecord::Schema.define(version: 20150329204157) do
 
 
   create_table "patients", force: true do |t|
@@ -27,7 +25,8 @@ ActiveRecord::Schema.define(version: 20150328224335) do
     t.string   "col2"
     t.string   "col3"
     t.string   "col4"
-
+    t.string   "col5"
+    t.string   "col6"
   end
 
 end
