@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330155956) do
+ActiveRecord::Schema.define(version: 20150330170320) do
 
   create_table "meeting", force: true do |t|
     t.string   "day"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20150330155956) do
     t.string   "col4"
     t.string   "col5"
     t.string   "col6"
+    t.string   "col7"
   end
 
   create_table "pats", force: true do |t|

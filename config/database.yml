@@ -9,6 +9,10 @@ development:
   # pool: 5
   # timeout: 5000
 
+  #MAKE THE DATABASE DIFFERENT FOR THE THREE ENVIRONMENTS
+    #database: devdeploysuite
+    #database: testdeploysuite
+    #database: proddeploysuite
   adapter: mysql2
   encoding: utf8
   database: deploysuitetest
@@ -32,10 +36,18 @@ production:
   # pool: 5
   # timeout: 5000
 
-  adapter: "mysql2"
-  encoding: "utf8"
-  database: "deploysuitetest"
-  pool: "5"
-  username: "root"
-  password: "gan1dolf2"
-  socket_mysql: "/var/run/mysqld/mysqld.sock"
+  # adapter: "mysql2"
+  # encoding: "utf8"
+  # database: "deploysuitetest"
+  # pool: "5"
+  # username: "root"
+  # password: "gan1dolf2"
+  # socket_mysql: "/var/run/mysqld/mysqld.sock"
+
+  adapter: <%= CONFIG[:adapter1_mysql] %>
+  database: <%= CONFIG[:databaseA] %>
+  username: <%= CONFIG[:usernameA] %>
+  password: <%= CONFIG[:passwordA] %>
+  encoding: <%= CONFIG[:encodingA] %>
+  pool: <%= CONFIG[:poolA%>
+  socket: <%= CONFIG[:socketA] %>
